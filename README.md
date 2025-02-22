@@ -14,11 +14,19 @@ This project reads latitude, longitude, and altitude data from a NEO-M8N GPS mod
 
 ## Software Requirements
 - **Arduino IDE**: To upload and run the code.
+<<<<<<< HEAD
 - **TinyGPS++ Library**: Install the TinyGPS++ library for Arduino.
 
 ## Code Overview
 The code consists of the following components:
 - **GPS Data Reading**: Uses the TinyGPS++ library to read latitude, longitude, altitude, and satellite count.
+=======
+- **TinyGPS++ Library**: Install the TinyGPS++ library for Arduino.
+
+## Code Overview
+The code consists of the following components:
+- **GPS Data Reading**: Uses the TinyGPS++ library to read latitude, longitude, altitude, and satellite count.
+>>>>>>> 273c6061bfdf9203734f456c42045c093ff8df0a
 - **NED Conversion**: Converts GPS coordinates into a local NED frame relative to a reference point (defined by `LAT_REF`, `LONG_REF`, and `ALT_REF`).
 - **Real-Time Output**: Displays the GPS data and NED coordinates via the serial monitor.
 

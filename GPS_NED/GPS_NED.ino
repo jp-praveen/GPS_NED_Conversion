@@ -8,7 +8,6 @@
 #include <SoftwareSerial.h> 
 #include <math.h>
 #include "MPU9250.h"
-//#include <MatrixMath.h>
 
 // Arduino UNO PINS FOR SERIAL COMMUNICATION
 static const int RXPin = 4, TXPin = 3;
@@ -91,7 +90,7 @@ void loop() {
           
           SAT  = gps.satellites.value();
           
-          //ALT = 15.9;
+          
           /*Serial.print("Lat= "); 
           Serial.print(LAT,6); 
           Serial.print("\t");
@@ -142,15 +141,6 @@ void loop() {
           Serial.print(PN[2],2);
           Serial.print("\n");
                  
-         
-          //if (gps.location.isUpdated()){
-          /*Serial.print("Latitude= "); 
-          Serial.print(gps.location.lat(), 6);
-          Serial.print(" Longitude= "); 
-          Serial.println(gps.location.lng(), 6);
-          Serial.print("Number of satellites in use = "); 
-          Serial.println(gps.satellites.value()); 
-          //}*/
         }
       }         
   }
